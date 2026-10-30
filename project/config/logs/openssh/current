@@ -1,0 +1,178 @@
+2026-03-31 19:00:41.250433668  Server listening on 0.0.0.0 port 2222.
+2026-03-31 19:00:41.250453127  Server listening on :: port 2222.
+2026-03-31 19:00:41.257418918  Connection to localhost (::1) 2222 port [tcp/*] succeeded!
+2026-03-31 19:00:41.259769627  Connection closed by ::1 port 41602
+2026-03-31 19:00:44.833705712  Connection closed by 192.168.65.1 port 52564 [preauth]
+2026-03-31 19:00:52.812730299  Connection closed by 192.168.65.1 port 25870 [preauth]
+2026-03-31 19:01:11.139176668  Connection closed by 192.168.65.1 port 61841 [preauth]
+2026-03-31 19:02:00.607955219  Accepted password for student from 192.168.65.1 port 38886 ssh2
+2026-03-31 19:02:00.634670928  Attempt to write login records by non-root user (aborting)
+2026-03-31 19:02:04.037881971  Attempt to write login records by non-root user (aborting)
+2026-03-31 19:02:04.038251554  Received disconnect from 192.168.65.1 port 38886:11: disconnected by user
+2026-03-31 19:02:04.038322554  Disconnected from user student 192.168.65.1 port 38886
+2026-03-31 19:06:26.377641967  Received signal 15; terminating.
+2026-03-31 19:06:30.345685094  Server listening on 0.0.0.0 port 2222.
+2026-03-31 19:06:30.345698302  Server listening on :: port 2222.
+2026-03-31 19:06:30.354058511  Connection to localhost (::1) 2222 port [tcp/*] succeeded!
+2026-03-31 19:06:30.355939677  Connection closed by ::1 port 38912
+2026-03-31 19:18:31.787555803  Received disconnect from 192.168.65.1 port 49005:11: Bye Bye [preauth]
+2026-03-31 19:18:31.787559511  Disconnected from authenticating user student 192.168.65.1 port 49005 [preauth]
+2026-03-31 19:18:32.032079512  Failed password for student from 192.168.65.1 port 25794 ssh2
+2026-03-31 19:18:32.034889595  Accepted password for student from 192.168.65.1 port 42429 ssh2
+2026-03-31 19:18:32.036253345  Failed password for student from 192.168.65.1 port 20497 ssh2
+2026-03-31 19:18:32.037529387  drop connection #11 from [192.168.65.1]:58127 on [172.18.0.2]:2222 Maxstartups
+2026-03-31 19:18:32.037897928  Failed password for student from 192.168.65.1 port 51599 ssh2
+2026-03-31 19:18:32.038371595  Failed password for student from 192.168.65.1 port 25794 ssh2
+2026-03-31 19:18:32.038588262  Failed password for student from 192.168.65.1 port 37027 ssh2
+2026-03-31 19:18:32.039692428  Failed password for student from 192.168.65.1 port 56945 ssh2
+2026-03-31 19:18:32.041880303  Failed password for student from 192.168.65.1 port 27155 ssh2
+2026-03-31 19:18:32.043263428  Failed password for student from 192.168.65.1 port 55876 ssh2
+2026-03-31 19:18:32.045393595  Failed password for student from 192.168.65.1 port 38924 ssh2
+2026-03-31 19:18:32.046752553  Failed password for student from 192.168.65.1 port 34037 ssh2
+2026-03-31 19:18:32.047504262  Connection closed by authenticating user student 192.168.65.1 port 37027 [preauth]
+2026-03-31 19:18:32.047506220  Connection closed by authenticating user student 192.168.65.1 port 20497 [preauth]
+2026-03-31 19:18:32.047506928  Connection closed by authenticating user student 192.168.65.1 port 56945 [preauth]
+2026-03-31 19:18:32.048366678  Connection closed by authenticating user student 192.168.65.1 port 27155 [preauth]
+2026-03-31 19:18:32.048367970  Connection closed by authenticating user student 192.168.65.1 port 25794 [preauth]
+2026-03-31 19:18:32.048368678  Connection closed by 192.168.65.1 port 42429
+2026-03-31 19:18:32.048369345  Connection closed by authenticating user student 192.168.65.1 port 55876 [preauth]
+2026-03-31 19:18:32.048371470  srclimit_penalise: 192.168.65.1/32: activating ipv4 penalty of 16 seconds for penalty: failed authentication
+2026-03-31 19:18:32.048372553  Failed password for student from 192.168.65.1 port 29597 ssh2
+2026-03-31 19:18:32.049153928  Failed password for student from 192.168.65.1 port 51599 ssh2
+2026-03-31 19:18:32.050642012  Failed password for student from 192.168.65.1 port 64817 ssh2
+2026-03-31 19:18:32.052556012  Failed password for student from 192.168.65.1 port 59225 ssh2
+2026-03-31 19:18:32.053013345  Failed password for student from 192.168.65.1 port 62993 ssh2
+2026-03-31 19:18:32.054431720  Failed password for student from 192.168.65.1 port 33842 ssh2
+2026-03-31 19:18:32.061559762  Connection closed by authenticating user student 192.168.65.1 port 59225 [preauth]
+2026-03-31 19:18:32.061564303  Connection closed by authenticating user student 192.168.65.1 port 64817 [preauth]
+2026-03-31 19:18:32.061567553  Connection closed by authenticating user student 192.168.65.1 port 51599 [preauth]
+2026-03-31 19:18:32.061843803  Connection closed by authenticating user student 192.168.65.1 port 34037 [preauth]
+2026-03-31 19:18:32.061845178  Connection closed by authenticating user student 192.168.65.1 port 29597 [preauth]
+2026-03-31 19:18:32.061982512  Connection closed by authenticating user student 192.168.65.1 port 62993 [preauth]
+2026-03-31 19:18:32.061983345  Connection closed by authenticating user student 192.168.65.1 port 38924 [preauth]
+2026-03-31 19:18:32.061983928  Connection closed by authenticating user student 192.168.65.1 port 33842 [preauth]
+2026-03-31 19:18:46.207399212  drop connection #0 from [192.168.65.1]:42514 on [172.18.0.2]:2222 penalty: failed authentication
+2026-03-31 19:19:01.922539720  drop connection #0 from [192.168.65.1]:54909 on [172.18.0.2]:2222 penalty: failed authentication
+2026-03-31 19:19:35.960412180  drop connection #0 from [192.168.65.1]:64615 on [172.18.0.2]:2222 penalty: failed authentication
+2026-03-31 19:19:43.484882628  Received disconnect from 192.168.65.1 port 27488:11: Bye Bye [preauth]
+2026-03-31 19:19:43.484885919  Disconnected from authenticating user student 192.168.65.1 port 27488 [preauth]
+2026-03-31 19:19:43.732155044  drop connection #11 from [192.168.65.1]:52125 on [172.18.0.2]:2222 Maxstartups
+2026-03-31 19:19:43.732157544  Failed password for student from 192.168.65.1 port 31930 ssh2
+2026-03-31 19:19:43.733486003  Failed password for student from 192.168.65.1 port 34119 ssh2
+2026-03-31 19:19:43.733977294  drop connection #13 from [192.168.65.1]:52251 on [172.18.0.2]:2222 Maxstartups
+2026-03-31 19:19:43.734221253  Failed password for student from 192.168.65.1 port 17227 ssh2
+2026-03-31 19:19:43.734222711  drop connection #13 from [192.168.65.1]:36328 on [172.18.0.2]:2222 Maxstartups
+2026-03-31 19:19:43.736613711  Failed password for student from 192.168.65.1 port 30422 ssh2
+2026-03-31 19:19:43.739017961  Failed password for student from 192.168.65.1 port 31930 ssh2
+2026-03-31 19:19:43.739252419  Failed password for student from 192.168.65.1 port 45668 ssh2
+2026-03-31 19:19:43.740474086  Accepted password for student from 192.168.65.1 port 33382 ssh2
+2026-03-31 19:19:43.740799586  Failed password for student from 192.168.65.1 port 40801 ssh2
+2026-03-31 19:19:43.740800836  Failed password for student from 192.168.65.1 port 31874 ssh2
+2026-03-31 19:19:43.741802294  Failed password for student from 192.168.65.1 port 55126 ssh2
+2026-03-31 19:19:43.743233378  Failed password for student from 192.168.65.1 port 35144 ssh2
+2026-03-31 19:19:43.743756253  Failed password for student from 192.168.65.1 port 34707 ssh2
+2026-03-31 19:19:43.744660586  Failed password for student from 192.168.65.1 port 59080 ssh2
+2026-03-31 19:19:43.745234128  Failed password for student from 192.168.65.1 port 39544 ssh2
+2026-03-31 19:19:43.747397669  Connection closed by authenticating user student 192.168.65.1 port 31930 [preauth]
+2026-03-31 19:19:43.747398794  Connection closed by authenticating user student 192.168.65.1 port 31874 [preauth]
+2026-03-31 19:19:43.747399544  Connection closed by authenticating user student 192.168.65.1 port 45668 [preauth]
+2026-03-31 19:19:43.747400211  Connection closed by authenticating user student 192.168.65.1 port 30422 [preauth]
+2026-03-31 19:19:43.747400711  Connection closed by authenticating user student 192.168.65.1 port 40801 [preauth]
+2026-03-31 19:19:43.747734836  Connection closed by authenticating user student 192.168.65.1 port 55126 [preauth]
+2026-03-31 19:19:43.747736336  Connection closed by 192.168.65.1 port 33382
+2026-03-31 19:19:43.747853336  srclimit_penalise: 192.168.65.1/32: activating ipv4 penalty of 16 seconds for penalty: failed authentication
+2026-03-31 19:19:43.747854211  Connection closed by authenticating user student 192.168.65.1 port 35144 [preauth]
+2026-03-31 19:19:43.748649294  Failed password for student from 192.168.65.1 port 17227 ssh2
+2026-03-31 19:19:43.748703378  Connection closed by authenticating user student 192.168.65.1 port 34707 [preauth]
+2026-03-31 19:19:43.749048169  Failed password for student from 192.168.65.1 port 34119 ssh2
+2026-03-31 19:19:43.749588919  Connection closed by authenticating user student 192.168.65.1 port 39544 [preauth]
+2026-03-31 19:19:43.749958711  Connection closed by authenticating user student 192.168.65.1 port 59080 [preauth]
+2026-03-31 19:19:43.752402628  Connection closed by authenticating user student 192.168.65.1 port 17227 [preauth]
+2026-03-31 19:19:43.752403378  Connection closed by authenticating user student 192.168.65.1 port 34119 [preauth]
+2026-03-31 19:19:58.214878343  drop connection #0 from [192.168.65.1]:41763 on [172.18.0.2]:2222 penalty: failed authentication
+2026-03-31 19:20:27.325445759  drop connection #0 from [192.168.65.1]:64051 on [172.18.0.2]:2222 penalty: failed authentication
+2026-03-31 19:20:28.980182218  drop connection #0 from [192.168.65.1]:17678 on [172.18.0.2]:2222 penalty: failed authentication
+2026-03-31 19:21:15.495845795  Connection closed by authenticating user student 192.168.65.1 port 35874 [preauth]
+2026-03-31 19:21:26.553664134  Received disconnect from 192.168.65.1 port 28288:11: Bye Bye [preauth]
+2026-03-31 19:21:26.553667551  Disconnected from authenticating user student 192.168.65.1 port 28288 [preauth]
+2026-03-31 19:21:26.788830301  Accepted password for student from 192.168.65.1 port 55594 ssh2
+2026-03-31 19:21:26.806271342  Connection closed by 192.168.65.1 port 55594
+2026-03-31 19:21:41.887541044  Received disconnect from 192.168.65.1 port 42537:11: Bye Bye [preauth]
+2026-03-31 19:21:41.887544169  Disconnected from authenticating user student 192.168.65.1 port 42537 [preauth]
+2026-03-31 19:21:42.120151085  Accepted password for student from 192.168.65.1 port 21309 ssh2
+2026-03-31 19:21:42.137025085  Connection closed by 192.168.65.1 port 21309
+2026-03-31 19:21:57.674702009  Received disconnect from 192.168.65.1 port 54165:11: Bye Bye [preauth]
+2026-03-31 19:21:57.674705509  Disconnected from authenticating user student 192.168.65.1 port 54165 [preauth]
+2026-03-31 19:21:57.914484051  Accepted password for student from 192.168.65.1 port 26727 ssh2
+2026-03-31 19:21:57.932244218  Connection closed by 192.168.65.1 port 26727
+2026-03-31 19:22:17.052938171  Received disconnect from 192.168.65.1 port 35982:11: Bye Bye [preauth]
+2026-03-31 19:22:17.052940213  Disconnected from authenticating user student 192.168.65.1 port 35982 [preauth]
+2026-03-31 19:22:17.292325338  Failed password for student from 192.168.65.1 port 27429 ssh2
+2026-03-31 19:22:17.297644463  Connection closed by authenticating user student 192.168.65.1 port 27429 [preauth]
+2026-03-31 19:22:20.493315714  Received disconnect from 192.168.65.1 port 33810:11: Bye Bye [preauth]
+2026-03-31 19:22:20.493317589  Disconnected from authenticating user student 192.168.65.1 port 33810 [preauth]
+2026-03-31 19:22:20.730253339  Accepted password for student from 192.168.65.1 port 20227 ssh2
+2026-03-31 19:22:20.745998839  Connection closed by 192.168.65.1 port 20227
+2026-03-31 19:22:25.378807258  Received disconnect from 192.168.65.1 port 54140:11: Bye Bye [preauth]
+2026-03-31 19:22:25.378810675  Disconnected from authenticating user student 192.168.65.1 port 54140 [preauth]
+2026-03-31 19:22:25.617838842  Failed password for student from 192.168.65.1 port 42709 ssh2
+2026-03-31 19:22:25.618782383  Failed password for student from 192.168.65.1 port 62117 ssh2
+2026-03-31 19:22:25.619950217  Accepted password for student from 192.168.65.1 port 24087 ssh2
+2026-03-31 19:22:25.621646175  Failed password for student from 192.168.65.1 port 26774 ssh2
+2026-03-31 19:22:25.625405925  Failed password for student from 192.168.65.1 port 42709 ssh2
+2026-03-31 19:22:25.635467800  Connection closed by authenticating user student 192.168.65.1 port 62117 [preauth]
+2026-03-31 19:22:25.636142383  Connection closed by 192.168.65.1 port 24087
+2026-03-31 19:22:25.637201883  Failed password for student from 192.168.65.1 port 26774 ssh2
+2026-03-31 19:22:25.637202967  Failed password for student from 192.168.65.1 port 42709 ssh2
+2026-03-31 19:22:25.641723675  Connection closed by authenticating user student 192.168.65.1 port 42709 [preauth]
+2026-03-31 19:22:25.642336758  Connection closed by authenticating user student 192.168.65.1 port 26774 [preauth]
+2026-03-31 19:22:27.993347218  Received disconnect from 192.168.65.1 port 53883:11: Bye Bye [preauth]
+2026-03-31 19:22:27.993350218  Disconnected from authenticating user student 192.168.65.1 port 53883 [preauth]
+2026-03-31 19:22:28.233935301  Failed password for student from 192.168.65.1 port 39108 ssh2
+2026-03-31 19:22:28.235440510  Accepted password for student from 192.168.65.1 port 19425 ssh2
+2026-03-31 19:22:28.237105510  Failed password for student from 192.168.65.1 port 24979 ssh2
+2026-03-31 19:22:28.238529843  Failed password for student from 192.168.65.1 port 41822 ssh2
+2026-03-31 19:22:28.240570301  Failed password for student from 192.168.65.1 port 39108 ssh2
+2026-03-31 19:22:28.250728260  Connection closed by authenticating user student 192.168.65.1 port 24979 [preauth]
+2026-03-31 19:22:28.250730343  srclimit_penalise: 192.168.65.1/32: activating ipv4 penalty of 19 seconds for penalty: failed authentication
+2026-03-31 19:22:28.251874760  Connection closed by 192.168.65.1 port 19425
+2026-03-31 19:22:28.252267343  Failed password for student from 192.168.65.1 port 39108 ssh2
+2026-03-31 19:22:28.252357260  Failed password for student from 192.168.65.1 port 41822 ssh2
+2026-03-31 19:22:28.257127218  Connection closed by authenticating user student 192.168.65.1 port 41822 [preauth]
+2026-03-31 19:22:28.257877926  Connection closed by authenticating user student 192.168.65.1 port 39108 [preauth]
+2026-03-31 19:22:30.335798677  drop connection #0 from [192.168.65.1]:25745 on [172.18.0.2]:2222 penalty: failed authentication
+2026-03-31 19:22:34.528363554  drop connection #0 from [192.168.65.1]:25048 on [172.18.0.2]:2222 penalty: failed authentication
+2026-03-31 19:22:47.830101755  drop connection #0 from [192.168.65.1]:64271 on [172.18.0.2]:2222 penalty: failed authentication
+2026-04-01 16:56:01.985190921  Timeout before authentication for connection from 192.168.65.1 to 172.18.0.2, pid = 438
+2026-04-01 18:15:17.047249177  Connection closed by 192.168.65.1 port 23934
+2026-04-01 18:15:17.077558344  banner exchange: Connection from 192.168.65.1 port 44721: invalid format
+2026-04-01 18:15:17.078969552  banner exchange: Connection from 192.168.65.1 port 49690: invalid format
+2026-04-01 18:15:17.154488761  banner exchange: Connection from 192.168.65.1 port 49748: invalid format
+2026-04-01 18:15:17.155495469  banner exchange: Connection from 192.168.65.1 port 64847: invalid format
+2026-04-01 18:15:17.230108136  banner exchange: Connection from 192.168.65.1 port 24221: invalid format
+2026-04-01 18:15:17.231666927  banner exchange: Connection from 192.168.65.1 port 31424: invalid format
+2026-04-02 14:38:07.876240251  Accepted password for student from 192.168.65.1 port 58319 ssh2
+2026-04-02 14:38:07.898947501  Attempt to write login records by non-root user (aborting)
+2026-04-02 14:38:11.380707628  Attempt to write login records by non-root user (aborting)
+2026-04-02 14:38:11.381161211  Received disconnect from 192.168.65.1 port 58319:11: disconnected by user
+2026-04-02 14:38:11.381261253  Disconnected from user student 192.168.65.1 port 58319
+2026-04-03 10:38:45.090484383  Received signal 15; terminating.
+2026-06-24 06:58:11.222986708  Server listening on 0.0.0.0 port 2222.
+2026-06-24 06:58:11.224994750  Server listening on :: port 2222.
+2026-06-24 06:58:12.225272542  Connection to localhost (::1) 2222 port [tcp/*] succeeded!
+2026-06-24 06:58:12.232882084  Connection closed by ::1 port 60998
+2026-07-22 13:11:30.648502302  Received signal 15; terminating.
+2026-10-30 10:58:53.748820004  Server listening on 0.0.0.0 port 2222.
+2026-10-30 10:58:53.749360838  Server listening on :: port 2222.
+2026-10-30 10:58:54.753727422  Connection to localhost (::1) 2222 port [tcp/*] succeeded!
+2026-10-30 10:58:54.761954505  Connection closed by ::1 port 58394
+2026-10-30 10:59:09.651639679  Accepted password for student from 192.168.65.1 port 31623 ssh2
+2026-10-30 10:59:09.663690929  Attempt to write login records by non-root user (aborting)
+2026-10-30 10:59:36.227656094  Attempt to write login records by non-root user (aborting)
+2026-10-30 10:59:36.228074885  Received disconnect from 192.168.65.1 port 31623:11: disconnected by user
+2026-10-30 10:59:36.228269260  Disconnected from user student 192.168.65.1 port 31623
+2026-10-30 10:59:49.703695669  Accepted password for weakuser from 192.168.65.1 port 60812 ssh2
+2026-10-30 10:59:49.710309794  Failed to set uids to 1001.
+2026-10-30 10:59:54.893999713  Accepted password for weakuser from 192.168.65.1 port 54841 ssh2
+2026-10-30 10:59:54.901262547  Failed to set uids to 1001.
+2026-10-30 11:02:28.291710340  Received signal 15; terminating.
