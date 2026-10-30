@@ -1,19 +1,9 @@
-version: '3.8'
-
 services:
   ssh-server:
-    image: linuxserver/openssh-server
+    build: .
     container_name: ssh_lab
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Ljubljana
-      - PASSWORD_ACCESS=true
-      - USER_NAME=student
-      - USER_PASSWORD=password123
     ports:
-      - "2222:2222"
+      - "127.0.0.1:2222:2222"
     volumes:
-      - ./config:/config
-      - ./create_users.sh:/create_users.sh
+      - ./create_users.sh:/create_users.sh:ro
     restart: unless-stopped
