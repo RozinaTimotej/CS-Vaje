@@ -1,0 +1,26 @@
+┌──(kali㉿kali)-[~/labops/release]
+└─$ sha256sum -c install.sh.sha256
+
+install.sh: OK
+                                                                          
+┌──(kali㉿kali)-[~/labops/release]
+└─$ gpg --homedir "$HOME/labops/gnupg-release" --verify install.sh.sha256.asc install.sh.sha256
+
+gpg: Signature made Tue 17 Nov 2026 15:56:49 CET
+gpg:                using RSA key D54CB2CEB61A2F5555D9C2D3BF1AE1A78D5EFB74
+gpg:                issuer "labops-release@labops.example"
+gpg: Good signature from "LabOps Release <labops-release@labops.example>" [ultimate]
+                                                                          
+┌──(kali㉿kali)-[~/labops/release]
+└─$ echo 'echo "MALICOUS CODE"' >> install.sh
+                                                                          
+┌──(kali㉿kali)-[~/labops/release]
+└─$ sha256sum -c install.sh.sha256
+gpg --homedir "$HOME/labops/gnupg-release" --verify install.sh.sha256.asc install.sh.sha256
+install.sh: FAILED
+sha256sum: WARNING: 1 computed checksum did NOT match
+gpg: Signature made Tue 17 Nov 2026 15:56:49 CET
+gpg:                using RSA key D54CB2CEB61A2F5555D9C2D3BF1AE1A78D5EFB74
+gpg:                issuer "labops-release@labops.example"
+gpg: Good signature from "LabOps Release <labops-release@labops.example>" [ultimate]
+                

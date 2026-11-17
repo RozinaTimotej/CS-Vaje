@@ -1,0 +1,74 @@
+┌──(kali㉿kali)-[~/Desktop/CS-Vaje/project]
+└─$ cat "$HOME/labops/evidence/fingerprints.txt"
+
+=== release key ===
+pub   rsa4096 2026-11-17 [SCE] [expires: 2027-11-17]
+      D54C B2CE B61A 2F55 55D9  C2D3 BF1A E1A7 8D5E FB74
+uid           [ultimate] LabOps Release <labops-release@labops.example>
+
+=== attacker key ===
+pub   rsa4096 2026-11-17 [SCE] [expires: 2027-11-17]
+      1D23 BE71 8014 4793 2624  1AEA 3545 3C9C 5B27 444B
+uid           [ultimate] LabOps Release <labops-release@labops.example>
+
+                                                                          
+┌──(kali㉿kali)-[~/Desktop/CS-Vaje/project]
+└─$ gpg --homedir "$HOME/labops/gnupg-attacker" \
+  --armor --export labops-release@labops.example > /tmp/attacker-pubkey.asc
+
+mkdir -p /tmp/empty-keyring
+chmod 700 /tmp/empty-keyring
+gpg --homedir /tmp/empty-keyring --import /tmp/attacker-pubkey.asc
+gpg --homedir /tmp/empty-keyring --list-keys
+gpg: keybox '/tmp/empty-keyring/pubring.kbx' created
+gpg: /tmp/empty-keyring/trustdb.gpg: trustdb created
+gpg: key 35453C9C5B27444B: public key "LabOps Release <labops-release@labops.example>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+/tmp/empty-keyring/pubring.kbx
+------------------------------
+pub   rsa4096 2026-11-17 [SCE] [expires: 2027-11-17]
+      1D23BE718014479326241AEA35453C9C5B27444B
+uid           [ unknown] LabOps Release <labops-release@labops.example>
+
+                                                                          
+┌──(kali㉿kali)-[~/Desktop/CS-Vaje/project]
+└─$ echo "Confidential note for LabOps" > /tmp/note.txt
+
+                                                                          
+┌──(kali㉿kali)-[~/Desktop/CS-Vaje/project]
+└─$ gpg --homedir /tmp/empty-keyring \
+  --encrypt --armor --recipient labops-release@labops.example /tmp/note.txt
+gpg: 35453C9C5B27444B: There is no assurance this key belongs to the named user
+
+pub  rsa4096/35453C9C5B27444B 2026-11-17 LabOps Release <labops-release@labops.example>
+ Primary key fingerprint: 1D23 BE71 8014 4793 2624  1AEA 3545 3C9C 5B27 444B
+
+It is NOT certain that the key belongs to the person named
+in the user ID.  If you *really* know what you are doing,
+you may answer the next question with yes.
+
+Use this key anyway? (y/N) y
+                                                                          
+┌──(kali㉿kali)-[~/Desktop/CS-Vaje/project]
+└─$ ls /tmp
+attacker-pubkey.asc
+config-err-iK82yV
+empty-keyring
+note.txt
+note.txt.asc
+systemd-private-91ce04e244414fa498875b170e7652d5-colord.service-RFPSR6
+systemd-private-91ce04e244414fa498875b170e7652d5-ModemManager.service-1eL9eg
+systemd-private-91ce04e244414fa498875b170e7652d5-NetworkManager.service-o7O8vN
+systemd-private-91ce04e244414fa498875b170e7652d5-pcscd.service-ekIWWW
+systemd-private-91ce04e244414fa498875b170e7652d5-polkit.service-xWIg9z
+systemd-private-91ce04e244414fa498875b170e7652d5-spice-vdagentd.service-9c9Q8q
+systemd-private-91ce04e244414fa498875b170e7652d5-systemd-logind.service-44YSgW
+systemd-private-91ce04e244414fa498875b170e7652d5-upower.service-vYItQ5
+                                                                          
+┌──(kali㉿kali)-[~/Desktop/CS-Vaje/project]
+└─$ gpg --homedir "$HOME/labops/gnupg-attacker" \
+  --decrypt /tmp/note.txt.asc
+gpg: encrypted with rsa4096 key, ID 35453C9C5B27444B, created 2026-11-17
+      "LabOps Release <labops-release@labops.example>"
+Confidential note for LabOps
